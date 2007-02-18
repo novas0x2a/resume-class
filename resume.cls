@@ -1,10 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\def\RCS$#1: #2 ${\expandafter\def\csname RCS#1\endcsname{#2}}
-\RCS$Revision: 1.1 $
-\RCS$Date: 2006/08/23 21:04:12 $
 
 \ProvidesClass{resume}
-              [\RCSDate\space v\RCSRevision\space
+              [2007/02/18 v1.2
                (My Resume Class)]
 
 \DeclareOption*{%
@@ -136,6 +133,7 @@
 
 \def\interplace{\myline[\@myskip]}
 
+\newif\ifshowrefs
 \newif\ifclosed
 
 \renewenvironment{section}[1]{%
