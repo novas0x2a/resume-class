@@ -18,6 +18,7 @@
 \RequirePackage{eso-pic}
 
 \setitemize[1]{nolistsep}
+\setitemize[2]{nolistsep}
 
 \pagestyle{fancy}
 
