@@ -10,7 +10,7 @@
 }
 \ProcessOptions
 
-\LoadClass[11pt]{article}
+\LoadClass{article}
 \RequirePackage[margin=0.5in]{geometry}
 \RequirePackage{calc}
 \RequirePackage{enumitem}
@@ -39,7 +39,7 @@
 \newlength{\@lwidth}
 \newlength{\@mwidth}
 
-\setlength{\@lwidth}{1.0in}
+\setlength{\@lwidth}{0.65in}
 \setlength{\@mwidth}{.75cm}
 
 \newdimen\@topfirst
