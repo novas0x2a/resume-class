@@ -11,7 +11,13 @@
 \ProcessOptions
 
 \LoadClass{article}
-\RequirePackage[margin=0.5in]{geometry}
+\newlength{\@horizmargin}
+\newlength{\@vertmargin}
+
+\setlength{\@horizmargin}{0.5in}
+\setlength{\@vertmargin}{0.4in}
+
+\RequirePackage[left=\@horizmargin,right=\@horizmargin,top=\@vertmargin,bottom=\@vertmargin]{geometry}
 \RequirePackage{calc}
 \RequirePackage{enumitem}
 \RequirePackage{fancyhdr}
@@ -47,51 +53,14 @@
 
 \AddToShipoutPicture{%
   \begingroup
-  \setlength{\@tempdima}{\@lwidth + 0.5in + \@mwidth}%
-  \setlength{\@tempdimb}{\paperheight-\@topfirst-0.5in}%
+  \setlength{\@tempdima}{\@lwidth + \@horizmargin + \@mwidth}%
+  \setlength{\@tempdimb}{\paperheight-\@topfirst-\@vertmargin}%
   \linethickness{\LenToUnit{0.4pt}}%
   \put(\LenToUnit{\@tempdima},\LenToUnit{0pt}){%
     \framebox(0,\LenToUnit{\@tempdimb}){}}%
   \endgroup
   \global\@topfirst=\@uglyhack
 }
-
-%\AddToShipoutPicture{%
-%  \ifdim\pagetotal>\pagegoal
-%    \let\tmp\pagegoal
-%  \else
-%    \let\tmp\pagetotal
-%  \fi
-%  \begingroup
-%  \setlength{\@tempdima}{\@lwidth + 0.5in + \@mwidth}%
-%  \setlength{\@tempdimb}{\paperheight-\@topfirst-0.5in}%
-%  \setlength{\@tempdimc}{\paperheight-\tmp-0.5in}%
-%  \setlength{\@tempdimb}{\@tempdimb-\@tempdimc}
-%  \linethickness{\LenToUnit{0.4pt}}%
-%  \put(\LenToUnit{\@tempdima},\LenToUnit{\@tempdimc}){%
-%    \framebox(0,\LenToUnit{\@tempdimb}){}%
-%    %\line(1,0){\@tempdimb}%
-%  }%
-%  %\setlength{\@tempdima}{\@tempdima+1in}
-%  %\put(\LenToUnit{\@tempdima},\LenToUnit{\@tempdimc}){%
-%  %  \framebox(\LenToUnit{\paperwidth},0){}%
-%  %}%
-%  \endgroup
-%  \global\@topfirst=\@uglyhack
-%}
-
-
-
-%\AddToShipoutPicture{%
-%  \begingroup
-%  \def\@off{\footskip}
-%  \setlength{\@tempdimb}{\paperwidth-\@off-\@off}%
-%  \setlength{\@tempdimc}{\paperheight-\@off-\@off}%
-%  \linethickness{\LenToUnit{0.4pt}}%
-%  \put(\LenToUnit{\@off},\LenToUnit{\@off}){%
-%    \framebox(\LenToUnit{\@tempdimb},\LenToUnit{\@tempdimc}){}}%
-%  \endgroup  
-%}
 
 \newlength{\tmp@rule}
 \def\shiftrule#1{%
