@@ -1,8 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 
 \ProvidesClass{resume}
-              [2007/02/18 v1.2
-               (My Resume Class)]
+            [2008/01/15 v1.3
+            (Mike Lundy's Resume Class)]
 
 \DeclareOption*{%
     \PassOptionsToClass{\CurrentOption}{article}%
@@ -15,7 +15,7 @@
 \newlength{\@vertmargin}
 
 \setlength{\@horizmargin}{0.5in}
-\setlength{\@vertmargin}{0.4in}
+\setlength{\@vertmargin}{0.5in}
 
 \RequirePackage[left=\@horizmargin,right=\@horizmargin,top=\@vertmargin,bottom=\@vertmargin]{geometry}
 \RequirePackage{calc}

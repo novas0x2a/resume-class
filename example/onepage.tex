@@ -1,0 +1,116 @@
+\documentclass[letterpaper,10pt]{resume}
+\usepackage[pdftex]{color}
+
+\def\bclr#1{\expandafter\gdef\csname#1\endcsname##1{{\color{#1}\textbf{##1}}}}
+\definecolor{green}{rgb}{0,0.5,0}
+
+\bclr{red}
+\bclr{blue}
+\bclr{green}
+
+\name{Foo Bar}
+\address{
+    1234 Road Lane\next
+    San Jose, California 12345\next
+    (M) 102-345-6789
+}
+\email{\blue{root@localhost}}
+
+\begin{document}
+
+    \section{Education}
+        \place{Space University, Pluto}
+        \job{Student}{August 2002}{May 2006}
+        \begin{items}
+            \item Bachelor of Science in Computer Science
+            \item Bachelor of Science in Electrical and Computer Engineering
+        \end{items}
+        \endplace
+    \endsection
+
+    \section{Experience}
+        \place{Olympus Mons, Mars}
+            \job{Plumber}{August 2008}{Present}
+            \begin{items}
+                \item Quisque sit amet justo. Cras id justo id lacus placerat accumsan. Mauris posuere.
+                \item Integer pretium neque at turpis. Sed erat. Nam ornare, libero nec commodo nullam.
+                \item Aliquam ac massa in mi elementum laoreet. Praesent ullamcorper, dolor nec nullam.
+            \end{items}
+        \endplace
+        \place{Alpha Regio, Venus}
+            \job{Meteorologist}{November 2006}{June 2008}
+            \begin{items}
+                \item Nunc nulla nulla, posuere non, sagittis eu, rutrum quis, dui. Vestibulum posuere.
+                \item AUt magna nisi, convallis eget, mattis ut, molestie id, est. Curabitur tortor sed.
+                \item Curabitur vel lectus. Sed congue bibendum nulla. Morbi sed lorem. Nulla volutpat.
+                \item Donec laoreet arcu ut tortor. Duis pretium. Suspendisse lobortis. Duis id nullam.
+                \item Sed sit amet magna. Pellentesque mattis libero id arcu. Morbi sit amet nisi amet.
+                \item Donec sit amet ligula. Aliquam pretium ipsum ac libero. Quisque varius, sem amet.
+                \begin{items}
+                    \item Integer ac ante sit amet lorem interdum viverra. Duis odio. Suspendisse sed amet.
+                    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque sed.
+                    \item In ipsum lectus, cursus sed, tempus ut, varius et, orci. Maecenas ac justo metus.
+                    \item Maecenas non elit. Sed auctor orci. Suspendisse nibh. Donec eleifend. Nullam sed.
+                    \item Mauris eu ligula vitae lectus malesuada tristique. Integer tempus. Integer metus.
+                \end{items}
+            \end{items}
+        \endplace
+        \place{Caloris Basin, Mercury}
+            \job{Towel Services Engineer}{January 2006}{May 2006}
+            \begin{items}
+                \item Sed sodales vehicula purus. Morbi vulputate, metus eu egestas imperdiet volutpat.
+                \item Ut gravida. Phasellus tristique sagittis eros. Duis euismod. Pellentesque nullam.
+                \item Sed nec lectus. Nam egestas nisl eget ante. Sed ipsum velit, dapibus eu volutpat.
+                \item Duis non ante. Maecenas consequat sodales magna. Ut sed ipsum. Fusce tellus amet.
+            \end{items}
+        \endplace
+
+    \section{Projects}
+        \place{Personal}
+            \begin{items}
+                \item Pellentesque quam est, elementum ac, gravida et, gravida id, purus. Nulla nullam.
+                \item Sed fringilla. Class aptent taciti sociosqu ad litora torquent per conubia metus.
+                \item Vivamus eleifend aliquam orci. Duis fringilla mattis nibh. Sed vel ante volutpat.
+                \item Nam egestas volutpat dolor. Etiam lectus. Phasellus rutrum ultrices magna nullam.
+                \item Duis placerat velit et orci. Morbi leo. Sed ac metus. Phasellus rutrum dolor sed.
+                \item Class aptent taciti sociosqu ad litora torquent per conubia nostra, per volutpat.
+            \end{items}
+        \endplace
+        \place{School}
+            \begin{items}
+                \item Vivamus in ligula nec mi auctor lobortis. Curabitur mattis dolor nec purus metus.
+                \item Vivamus tincidunt, nulla sit amet posuere tincidunt, lacus diam pulvinar posuere.
+                \item Pellentesque dictum pede vitae justo. Cras sollicitudin arcu quis pede cras amet.
+                \item Integer ultrices dictum neque. Etiam blandit, diam eu volutpat auctor, ipsum sed.
+                \item Praesent vehicula diam vel eros. Praesent vel est et est varius suscipit posuere.
+                \item Pellentesque habitant morbi tristique senectus et netus et malesuada fames metus.
+                \item Proin dui. Duis sed lorem. Mauris consectetur iaculis orci. Class aptent posuere.
+                \item Mauris ipsum nisi, congue ac, tempus a, sollicitudin in, nunc. In hac massa nunc.
+                \item Curabitur lectus tellus, bibendum non, sodales in, accumsan quis, neque. Ut amet.
+            \end{items}
+        \endplace
+    \endsection
+
+    \section{Skills}
+        \begin{items}
+            \item\blue{Expert Languages:}    C, C++, Perl, Bash, XHTML/CSS/XPATH
+            \item\blue{Competent Languages:} Python, Javascript, Actionscript, SQL, \TeX/\LaTeX, VHDL, Various ASM
+            \item\blue{Operating Systems:}   Ubuntu Linux, Gentoo Linux, Debian Linux, Windows
+            \item\blue{Tools:}               ViM, GDB, Gimp, Visual Studio, Eclipse, Xilinx ISE
+        \end{items}
+        \vspace{3mm}
+    \endsection
+
+    \section{Activities}
+        \begin{items}
+            \item Donec in lectus. Sed euismod tellus id nibh. Sed dui. Sed lacus. Nunc diam metus.
+            \item Vestibulum vehicula. Ut tempus semper lorem. Pellentesque habitant morbi posuere.
+            \item Etiam metus. Curabitur eu nisl. Sed tempor, mi eget ultricies tincidunt volutpat.
+            \item Class aptent taciti sociosqu ad litora torquent per conubia nostra, per volutpat.
+            \item Integer in lacus a enim iaculis congue. Duis non tortor. Praesent nullam sodales.
+        \end{items}
+    \endsection
+
+\end{document}
+
+% vim: set tw=300:
